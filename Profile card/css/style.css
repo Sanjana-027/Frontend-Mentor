@@ -1,71 +1,90 @@
-* {
-    margin: 0;
-    padding: 0;
+*{
+    margin:0;
+    padding:0;
 }
 
+body{
+    background-color: hsl(185, 75%, 39%);
+    background-image: url("../images/bg-pattern-bottom.svg"), url("../images/bg-pattern-top.svg");
+    background-repeat: no-repeat, no-repeat;
+}
 
-
-body {
-    background-color: hsl(233, 47%, 7%);
+.main_container{
     display: flex;
+    justify-content: center;
     height: 100vh;
-    width: 100vw;
+    align-items: center;
 }
 
-.main_container {
-    display:grid;
-    grid-template-columns: 1fr 1fr;
-    width: 67em;
-    margin: auto;
-}
-.main_container .content {
-    background-color: hsl(244, 38%, 16%);
-    padding: 4.8em 7em 4.3em 4.3em;
-    border-radius: 10px 0px 00px 10px;
-}
-.main_container .content .paragraph h1 {
-    color: hsl(0, 0%, 100%);
-    font-size: 2em;
-    margin-bottom: 0.9em;
-    font-family: 'Inter', sans-serif;
-}
-.main_container .content .paragraph span {
-    color: hsl(277, 64%, 61%);
+.card{
+    width: 21.9em;
+    background-image: url("../images/bg-pattern-card.svg");
+    background-color: white;
+    background-repeat: no-repeat;
+    border-radius: 13px;
+    text-align: center;
 }
 
-.main_container .content .pararagph p{
-    color: hsla(0, 0%, 100%, 0.6);
+.card .content{
+    height: 17em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 25px;
+    border-bottom: hsl(0, 0%, 89%) 1px solid;
+}
+ .card .content .photo {
+    width: 90px;
+    height: 90px;
+    margin-top: 69px;
+    background-image: url("../images/image-victor.jpg");
+    border: white 5px solid;
+    border-radius: 50%;
+   
+}.card .content .name {
+    margin-top: 20px;
+}
+
+.card .content  .name {
+    font-size: 1.2em;
+    font-weight: 700;
+    color: hsl(229, 23%, 23%);
+}
+.card .content .name span {
+    font-weight: 400;
+    color: hsl(227, 10%, 46%);
+}
+.card .content .city {
     font-size: 0.9em;
-    font-family: 'Inter', sans-serif;
-    margin-bottom: 4em;
-    line-height: 1.8em;
+    font-weight: 500;
+    color: hsl(227, 10%, 46%);
 }
 
-.main_container .content .value{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    color: hsla(0, 0%, 100%, 0.75);
-    font-family: 'Inter', sans-serif;
+.card .info{ 
+    display: flex;
+    height: 5em;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 4px 11px;
+}
+.card .info .like {
+    font-size: 1.2em;
+    font-weight: 700;
+    color: hsl(229, 23%, 23%);
+}
+.card .info .Followers{
+    margin: 5px;
+    color: hsl(0, 0%, 59%);
+    font-weight: 400;
+    font-size: 0.7em;
+    letter-spacing: 1px;
 }
 
-.main_container .content .value h2 {
-    color: hsl(0, 0%, 100%);
+.card .content .name {
+    animation: opac 2s;
 }
-.main_container .content .value p {
-    text-transform: uppercase;
-    font-family: 'Lexend Deca', sans-serif;
-    font-size: 0.8em;
-    color: hsla(0, 0%, 100%, 0.6);
-    margin-top: 0.5em;
-}
-.main_container .img {
-    background: url(../images/image-header-desktop.jpg) no-repeat;
-    background-size: cover;
-    border-radius: 0 10px 10px 0;
-}
-.main_container .img div {
-    background-color: hsl(277, 64%, 61%);
-    opacity: 0.5;
-    height: 100%;
-    border-radius: 0 10px 10px 0;
+.card .info {
+    animation: zoomIn 0.5s;
 }
