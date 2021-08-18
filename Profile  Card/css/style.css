@@ -1,0 +1,90 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    background-color: hsl(185, 75%, 39%);
+    background-image: url("../images/bg-pattern-bottom.svg"), url("../images/bg-pattern-top.svg");
+    background-repeat: no-repeat, no-repeat;
+}
+
+.main_container{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+
+.card{
+    width: 21.9em;
+    background-image: url("../images/bg-pattern-card.svg");
+    background-color: white;
+    background-repeat: no-repeat;
+    border-radius: 13px;
+    text-align: center;
+}
+
+.card .content{
+    height: 17em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 25px;
+    border-bottom: hsl(0, 0%, 89%) 1px solid;
+}
+ .card .content .photo {
+    width: 90px;
+    height: 90px;
+    margin-top: 69px;
+    background-image: url("../images/image-victor.jpg");
+    border: white 5px solid;
+    border-radius: 50%;
+   
+}.card .content .name {
+    margin-top: 20px;
+}
+
+.card .content  .name {
+    font-size: 1.2em;
+    font-weight: 700;
+    color: hsl(229, 23%, 23%);
+}
+.card .content .name span {
+    font-weight: 400;
+    color: hsl(227, 10%, 46%);
+}
+.card .content .city {
+    font-size: 0.9em;
+    font-weight: 500;
+    color: hsl(227, 10%, 46%);
+}
+
+.card .info{ 
+    display: flex;
+    height: 5em;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 4px 11px;
+}
+.card .info .like {
+    font-size: 1.2em;
+    font-weight: 700;
+    color: hsl(229, 23%, 23%);
+}
+.card .info .Followers{
+    margin: 5px;
+    color: hsl(0, 0%, 59%);
+    font-weight: 400;
+    font-size: 0.7em;
+    letter-spacing: 1px;
+}
+
+.card .content .name {
+    animation: opac 2s;
+}
+.card .info {
+    animation: zoomIn 0.5s;
+}
