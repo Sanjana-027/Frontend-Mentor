@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+body {
+    background-color: hsl(233, 47%, 7%);
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+
+.main_container {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    width: 67em;
+    margin: auto;
+}
+.main_container .content {
+    background-color: hsl(244, 38%, 16%);
+    padding: 4.8em 7em 4.3em 4.3em;
+    border-radius: 10px 0px 00px 10px;
+}
+.main_container .content .paragraph h1 {
+    color: hsl(0, 0%, 100%);
+    font-size: 2em;
+    margin-bottom: 0.9em;
+    font-family: 'Inter', sans-serif;
+}
+.main_container .content .paragraph span {
+    color: hsl(277, 64%, 61%);
+}
+
+.main_container .content .pararagph p{
+    color: hsla(0, 0%, 100%, 0.6);
+    font-size: 0.9em;
+    font-family: 'Inter', sans-serif;
+    margin-bottom: 4em;
+    line-height: 1.8em;
+}
+
+.main_container .content .value{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Inter', sans-serif;
+}
+
+.main_container .content .value h2 {
+    color: hsl(0, 0%, 100%);
+}
+.main_container .content .value p {
+    text-transform: uppercase;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 0.8em;
+    color: hsla(0, 0%, 100%, 0.6);
+    margin-top: 0.5em;
+}
+.main_container .img {
+    background: url(../images/image-header-desktop.jpg) no-repeat;
+    background-size: cover;
+    border-radius: 0 10px 10px 0;
+}
+.main_container .img div {
+    background-color: hsl(277, 64%, 61%);
+    opacity: 0.5;
+    height: 100%;
+    border-radius: 0 10px 10px 0;
+}
